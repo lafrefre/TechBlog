@@ -1,0 +1,14 @@
+{{!-- views/dashboard.handlebars --}}
+
+{{#each posts}}
+    <div>
+        <h2>{{title}}</h2>
+        <p>{{body}}</p>
+        <p>Created on {{createdAt}}</p>
+        <button class="btn btn-default" data-id="{{id}}">Delete</button>
+        <button class="btn btn-default" data-id="{{id}}">Edit</button>
+        <button class="btn btn-default" data-id="{{id}}">View</button>
+    </div>
+{{/each}}
+
+<a hfref="/new">New Post</a>
